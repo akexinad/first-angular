@@ -14,6 +14,7 @@ export class ProductListComponent {
     // Event flags
     showImage: boolean = false;
     // any[] means ANY DATA TYPE
+    listFilter: string = 'cart';
     products: any[] = [
         {
           "productId": 1,
