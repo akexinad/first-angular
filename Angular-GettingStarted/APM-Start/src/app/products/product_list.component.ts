@@ -8,6 +8,9 @@ import { componentFactoryName } from "@angular/compiler";
 
 export class ProductListComponent {
     pageTitle: string = 'Product List';
+    // Below are two examples of property binding.
+    imageWidth: number = 50;
+    imageMargin: number = 2;
     // any[] means ANY DATA TYPE
     products: any[] = [
         {
