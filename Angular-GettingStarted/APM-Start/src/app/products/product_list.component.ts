@@ -3,7 +3,7 @@ import IProduct from "./productInterface";
 import { ProductService } from "./product.service";
 
 @Component({
-    selector: 'pm-products',
+    // Now with routing we do not need the selector since there is no more nesting
     templateUrl: './product_list.component.html',
     styleUrls: [ './product_list.component.css' ]
 })
