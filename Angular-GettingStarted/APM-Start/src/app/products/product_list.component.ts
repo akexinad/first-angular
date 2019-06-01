@@ -83,6 +83,11 @@ export class ProductListComponent implements OnInit{
       this.listFilter = null;
     }
 
+    // Third: Where necessary attach the RatingClicked() event, give it another name, such as onRatingClicked() below and pass in the $event argument so the data passed from the start component is visible to the parent product list component.
+    onRatingClicked(message: string): void {
+      this.pageTitle = 'Product List: ' + message;
+    }
+
     performFilter(filterBy: string): IProduct[] {
       filterBy = filterBy.toLocaleLowerCase();
 
