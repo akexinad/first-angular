@@ -31,7 +31,7 @@ import { WelcomeComponent } from './home/welcome.component';
       { path: 'products/:id', component: ProductDetailComponent },
       { path: 'welcome', component: WelcomeComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
-      { path: '**', rdirectTo: 'welcome', pathMatch: 'full' }
+      { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ])
   ],
   bootstrap: [AppComponent]
