@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 // formsModule needs to be imported in order to use ngModel.
 import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './products/product_list.component';
@@ -23,7 +24,15 @@ import { WelcomeComponent } from './home/welcome.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      // PLEASE NOTE: THIS ORDER IS IMPORTANT
+      { path: 'products', component: ProductListComponent },
+      { path: 'products/:id', component: ProductDetailComponent },
+      { path: 'welcome', component: WelcomeComponent },
+      { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+      { path: '**', rdirectTo: 'welcome', pathMatch: 'full' }
+    ])
   ],
   bootstrap: [AppComponent]
 })
