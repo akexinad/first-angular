@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import IProduct from "./productInterface";
 
 @Component({
@@ -7,7 +7,7 @@ import IProduct from "./productInterface";
     styleUrls: [ './product_list.component.css' ]
 })
 
-export class ProductListComponent {
+export class ProductListComponent implements OnInit{
     pageTitle: string = 'Product List';
     // Below are two examples of property binding.
     imageWidth: number = 50;
@@ -74,5 +74,9 @@ export class ProductListComponent {
     toggleImage(): void {
       this.showImage = !this.showImage;
     }
-    
+
+    ngOnInit(): void {
+      console.log('In OnInit');
+      
+    }
 }
