@@ -23,7 +23,7 @@ export class ProductListComponent {
           "description": "Leaf rake with 48-inch wooden handle.",
           "price": 19.95,
           "starRating": 3.2,
-          "imageUrl": "https://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+          "imageUrl": "./assets/images/leaf_rake.jpg"
         },
         {
           "productId": 2,
@@ -33,7 +33,7 @@ export class ProductListComponent {
           "description": "15 gallon capacity rolling garden cart",
           "price": 32.99,
           "starRating": 4.2,
-          "imageUrl": "https://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+          "imageUrl": "./assets/images/garden_cart.jpg"
         },
         {
           "productId": 5,
@@ -43,7 +43,7 @@ export class ProductListComponent {
           "description": "Curved claw steel hammer",
           "price": 8.9,
           "starRating": 4.8,
-          "imageUrl": "https://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
+          "imageUrl": "./assets/images/hammer.jpg"
         },
         {
           "productId": 8,
@@ -53,7 +53,7 @@ export class ProductListComponent {
           "description": "15-inch steel blade hand saw",
           "price": 11.55,
           "starRating": 3.7,
-          "imageUrl": "https://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
+          "imageUrl": "./assets/images/saw.jpg"
         },
         {
           "productId": 10,
@@ -63,7 +63,7 @@ export class ProductListComponent {
           "description": "Standard two-button video game controller",
           "price": 35.95,
           "starRating": 4.6,
-          "imageUrl": "https://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
+          "imageUrl": "./assets/images/video_game_controller.jpg"
         }
     ];
 
