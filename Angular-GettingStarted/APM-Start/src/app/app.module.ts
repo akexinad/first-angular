@@ -46,6 +46,8 @@ import { ProductDetailGuard } from './products/product-detail.guard';
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ])
   ],
+  // Every app must at least bootstrap one component.
+  // The boostrap array must always be declared in the root application module.
   bootstrap: [AppComponent]
 })
 export class AppModule { }
