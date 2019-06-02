@@ -22,6 +22,11 @@ import { ProductDetailGuard } from './products/product-detail.guard';
   // aggregate and re-export.
 
 @NgModule({
+  // DECLARATIONS.
+  // Every component, directive and pipe must belong to one AND ONLY ONE angular module.
+  // Only declare directives, components and pipes.
+  // All directives, components and pipes are private by default.
+  
   declarations: [
     AppComponent,
     ProductListComponent,
