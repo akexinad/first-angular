@@ -29,9 +29,7 @@ export class ProductListComponent implements OnInit{
     filteredProducts: IProduct[];
     products: IProduct[] = [];
 
-    constructor(private productService: ProductService) {
-      
-    }
+    constructor(private productService: ProductService) { }
 
     // Third: Where necessary attach the RatingClicked() event, give it another name, such as onRatingClicked() below and pass in the $event argument so the data passed from the start component is visible to the parent product list component.
     onRatingClicked(message: string): void {
