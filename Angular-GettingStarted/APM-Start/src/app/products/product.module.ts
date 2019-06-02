@@ -23,9 +23,6 @@ import { SharedModule } from '../shared/shared.module';
           canActivate: [ ProductDetailGuard ],
           component: ProductDetailComponent
       },
-      { path: 'welcome', component: WelcomeComponent },
-      { path: '', redirectTo: 'welcome', pathMatch: 'full' },
-      { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ]),
     SharedModule
   ]

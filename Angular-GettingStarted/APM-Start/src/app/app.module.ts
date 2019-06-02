@@ -28,7 +28,9 @@ import { WelcomeComponent } from './home/welcome.component';
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot([
-      
+      { path: 'welcome', component: WelcomeComponent },
+      { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+      { path: '**', redirectTo: 'welcome', pathMatch: 'full' },
     ]),
     ProductModule
   ],
