@@ -13,6 +13,14 @@ import { ProductDetailComponent } from './products/product-detail.component';
 import { WelcomeComponent } from './home/welcome.component';
 import { ProductDetailGuard } from './products/product-detail.guard';
 
+// A MODULE is a class with an NgModule decorator
+// It's purpose is:
+  // to organise the peieces of the application.
+  // arrange them into blocks.
+  // extend our application with capabilities from external libraries. 
+  // provide a template resolution environment.
+  // aggregate and re-export.
+
 @NgModule({
   declarations: [
     AppComponent,
